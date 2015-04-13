@@ -1,0 +1,159 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+.collection{
+  height:100%;
+}
+.categories{
+  height: 165px;
+  width: 25%;
+  float: left;
+  text-align:center;
+  padding-top: 70px;
+  font-size: 20px;
+}
+.fiction{
+ @extend .categories;
+ //  margin-left: 70px;
+  background-color: #0065BD;
+ // margin-top: 40px;
+}
+.non-fiction{
+  @extend .categories; 
+  background-color:#009AA6;
+   //margin-top: 40px;
+}
+.languages{
+  @extend .categories;
+  background-color:#3F52B2;
+   //margin-top: 40px;
+}
+.magazines{
+  @extend .categories;
+  background-color:#006983;
+  // margin-top: 40px;
+}
+.newspapers{
+  clear:both;
+  @extend .categories;
+   //margin-left: 70px;
+  background-color:#00ADEF;
+  
+}
+.curriculum{
+  @extend .categories;
+  background-color:#7D9AAA;
+}
+.journals{
+  @extend .categories;
+  background-color:#002960;
+}
+.general-knowledge{
+  @extend .categories;
+  background-color:#67317E;
+}
+.container .jumbotron{
+  padding-left:0px;
+  padding-right:0px;
+}
+.app-head{
+  margin-left:20px;
+}
+.margin-right{
+  margin-right:20px;
+}
+.style-table{
+  border: 1px solid #ddd;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.position-button{
+  margin-left:10px;
+}
