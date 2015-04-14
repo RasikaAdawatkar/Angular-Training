@@ -34,6 +34,11 @@ body {
     margin-bottom: 0;
     line-height: 40px;
     padding-bottom: 19px;
+  
+     .app-head{
+     margin-left:20px;
+     }
+
   }
 }
 
@@ -90,65 +95,69 @@ body {
 }
 .collection{
   height:100%;
-}
-.categories{
-  height: 165px;
-  width: 25%;
-  float: left;
-  text-align:center;
-  padding-top: 70px;
-  font-size: 20px;
-}
-.fiction{
- @extend .categories;
- //  margin-left: 70px;
-  background-color: #0065BD;
- // margin-top: 40px;
-}
-.non-fiction{
-  @extend .categories; 
-  background-color:#009AA6;
-   //margin-top: 40px;
-}
-.languages{
-  @extend .categories;
-  background-color:#3F52B2;
-   //margin-top: 40px;
-}
-.magazines{
-  @extend .categories;
-  background-color:#006983;
-  // margin-top: 40px;
-}
-.newspapers{
-  clear:both;
-  @extend .categories;
-   //margin-left: 70px;
-  background-color:#00ADEF;
+
+  .fiction{
+    @extend .categories;
+    //  margin-left: 70px;
+    background-color: #0065BD;
+    // margin-top: 40px;
+    }
+
+   .non-fiction{
+    @extend .categories; 
+    background-color:#009AA6;
+    //margin-top: 40px;
+    }
+    
+    .languages{
+    @extend .categories;
+    background-color:#3F52B2;
+    //margin-top: 40px;
+    }
   
-}
-.curriculum{
-  @extend .categories;
-  background-color:#7D9AAA;
-}
-.journals{
-  @extend .categories;
-  background-color:#002960;
-}
-.general-knowledge{
-  @extend .categories;
-  background-color:#67317E;
-}
+    .magazines{
+    @extend .categories;
+    background-color:#006983;
+    // margin-top: 40px;
+    }
+ 
+    .newspapers{
+    clear:both;
+    @extend .categories;
+    //margin-left: 70px;
+    background-color:#00ADEF;
+    }
+
+    .curriculum{
+    @extend .categories;
+    background-color:#7D9AAA;
+    }
+
+    .journals{
+    @extend .categories;
+    background-color:#002960;
+    }
+
+    .general-knowledge{
+    @extend .categories;
+    background-color:#67317E;
+    }
+    
+    a{
+    color:white;
+    }
+ }
+
+
 .container .jumbotron{
   padding-left:0px;
   padding-right:0px;
 }
-.app-head{
-  margin-left:20px;
-}
+
 .margin-right{
   margin-right:20px;
 }
+
 .style-table{
   border: 1px solid #ddd;
   margin-left: 10px;
@@ -156,4 +165,16 @@ body {
 }
 .position-button{
   margin-left:10px;
+
+   .back-button{
+   margin-bottom: 20px;
+   height: 30px;
+   padding-bottom: 26px;
+   }
 }
+
+
+
+
+
+

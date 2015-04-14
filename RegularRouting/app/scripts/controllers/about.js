@@ -8,7 +8,7 @@
  * Controller of the regularRoutingApp
  */
 angular.module('regularRoutingApp')
-  .controller('AboutCtrl', function ($scope,$routeParams) {
+  .controller('AboutCtrl', function ($scope,$routeParams,$location) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -26,5 +26,8 @@ angular.module('regularRoutingApp')
      	else{
      		return ;
      	}
+     }
+     $scope.goBack = function (){
+      $location.path('/fiction');
      }
   });
