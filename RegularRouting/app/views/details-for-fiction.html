@@ -10,7 +10,8 @@
       </tr>
    </thead>
    <tbody>
-      <tr>
+
+     <!--  <tr>
          <td>1</td>
          <td>Deception Point</td>
          <td>Dan Brown</td>
@@ -48,8 +49,37 @@
          <td>The Monk Who Sold His Ferrari</td>
          <td>Robin S Sharma</td>
          <td><a ng-href="/#TheMonk">show details</a></td>
-      </tr>
+      </tr> -->
     
+
+      <tr ng-repeat = "book in books">
+        <td>{{book.id}}</td>
+        <td>{{book.name}}</td>
+        <td>{{book.author}}</td>
+        <td> 
+          <div class="dropdown">
+          <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Select Edition
+          <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <li>
+              <a ng-href="/#details/2000">2000 edition</a>
+            </li>
+            <li>
+              <a ng-href="/#details/2009">2009 edition</a>
+            </li>
+            <li>
+              <a ng-href="/#details/2013">2013 edition</a>
+            </li>
+            <li>
+              <a ng-href="/#details/2015">2015 edition</a>
+            </li>
+          </ul>
+        </div>
+      </td>
+    </tr>
+
    </tbody>
 </table>
 </div>

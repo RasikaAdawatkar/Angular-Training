@@ -34,13 +34,12 @@ body {
     margin-bottom: 0;
     line-height: 40px;
     padding-bottom: 19px;
-  
-     .app-head{
-     margin-left:20px;
-     }
-
   }
 }
+
+  h3.app-head{
+     margin-left:20px;
+     }
 
 /* Custom page footer */
 .footer {
@@ -92,6 +91,14 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+.categories{
+  height: 165px;
+  width: 25%;
+  float: left;
+  text-align:center;
+  padding-top: 70px;
+  font-size: 20px;
 }
 .collection{
   height:100%;
@@ -165,14 +172,12 @@ body {
 }
 .position-button{
   margin-left:10px;
-
-   .back-button{
+  }
+ .back-button{
    margin-bottom: 20px;
    height: 30px;
    padding-bottom: 26px;
    }
-}
-
 
 
 

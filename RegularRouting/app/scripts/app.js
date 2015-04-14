@@ -38,6 +38,11 @@ angular
         controller:'AboutCtrl'
        
       })
+      .when('/directives', {
+        templateUrl: 'views/directives-view.html',
+        controller:'directCtrl'
+       
+      })
 
       .otherwise({
         redirectTo: '/'
