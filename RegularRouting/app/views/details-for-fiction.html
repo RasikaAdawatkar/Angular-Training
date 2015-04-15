@@ -52,7 +52,7 @@
       </tr> -->
     
 
-      <tr ng-repeat = "book in books">
+      <tr  ng-mouseenter="showInfoPopUp($event,$index)" ng-mouseleave="hideInfoPopUp()" ng-repeat = "book in books">
         <td>{{book.id}}</td>
         <td>{{book.name}}</td>
         <td>{{book.author}}</td>
@@ -83,3 +83,4 @@
    </tbody>
 </table>
 </div>
+<popup-hover></popup-hover>

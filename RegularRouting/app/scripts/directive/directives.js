@@ -61,7 +61,18 @@ angular.module('regularRoutingApp')
       });
     }
   };
-});
+})
 
+.directive('popupHover', function() {
+  return {
+    restrict: 'AE',
+    scope: true,                   //change these to all the modes
+    replace: true,
+    templateUrl: 'views/popup-hover.html',
+    link: function(scope, elem, attrs) {
+     
+    }
+  };
+});
 
 

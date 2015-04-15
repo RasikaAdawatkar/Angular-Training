@@ -8,7 +8,7 @@ angular.module('regularRoutingApp')
 
 	//post data
 	this.add = function(){
-		var url = //add post url//
+		//var url = //add post url//
 		var promise =  $http({
 			method:'POST',
 			url:url,

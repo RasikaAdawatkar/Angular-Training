@@ -179,7 +179,65 @@ body {
    padding-bottom: 26px;
    }
 
+.info-popup {
+  position: absolute;
+  left: 520px;
+  top: 130px;
+  background: #fff;
+  z-index: 200;
+  width:300px;
+  height:auto;
+  box-shadow: -3px -3px 15px #aaa, 3px -3px 15px #aaa;
+  border: 1px solid #bbb;
+  //zoom: 1;
+  //-ms-filter:"progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color=#35454c)";
+}
 
+.info-popup .right-arrow {
+  top:25px;
+}
+
+.info-popup .peer-container {
+  min-height: 0;
+  height : auto !important;
+  padding-bottom: 10px;
+}
+
+.info-popup li {
+  line-height: 15px;
+  font-size: 11px;
+  color :#8B8B8B;
+  padding: 1px 12px;
+}
+
+.right-arrow {
+  position: absolute;
+  right: -8px;
+  width: 14px; height: 14px;
+  -webkit-transform: rotateZ(45deg);
+  -moz-transform: rotateZ(45deg);
+  -ms-transform: rotateZ(45deg);
+  -o-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+  filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=-0.70710678, M21=0.70710678, M22=0.70710678,sizingMethod='auto expand');
+  border-right: 1px solid #dbdbdb;
+  border-top: 1px solid #dbdbdb;
+  background: #fff;
+  top: 162px;
+  z-index: 100;
+}
+
+.peer-includes-container {
+  position: relative;
+  padding: 10px;
+  padding-top: 5px;
+  width: 298px;
+  height: auto;
+  overflow-x: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  z-index: 200;
+  background: #fff;
+}
 
 
 

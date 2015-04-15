@@ -60,4 +60,20 @@ angular.module('regularRoutingApp')
       $scope.goBack = function (){
       $location.path('/fiction')
      }
+
+
+     $scope.showInfoPopUp = function(event,index) {
+      $scope.showPeerGroupIncludesPopup = true;
+      $scope.bookHovered = $scope.books[index];
+      var x = event.clientX;
+      var y = event.clientY;
+      var offset = document.body.scrollTop;
+      var width = parseInt($('.info-popup').css('width'));
+      $('.info-popup').css({'left': x - width / 2 - 30, 'top': y + 10 + offset})
+     }
+
+     $scope.hideInfoPopUp = function() {
+      $scope.showPeerGroupIncludesPopup = false;
+     }
+     
   });
