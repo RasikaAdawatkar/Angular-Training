@@ -39,8 +39,7 @@ angular
        
       })
       .when('/directives', {
-        templateUrl: 'views/directives-view.html',
-        controller:'directCtrl'
+        templateUrl: 'views/directives-view.html'
        
       })
 

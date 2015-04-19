@@ -37,7 +37,7 @@ angular.module('regularRoutingApp')
             "<div class='line'>",
             "Name : <strong></strong>;  Change name:<input type='text' ng-model='name' /><br/>",
             "</div><div class='line'>",
-            "Color : <strong style='color:'></strong>;  Change color:<input type='text' ng-model='color' /><br/></div>",
+            "Color : <strong style='color:{{color}}'>{{color}}</strong>;  Change color:<input type='text' ng-model='color' /><br/></div>",
             "<br/><input type='button' ng-click='reverse()' value='Reverse Name'/>"
         ].join("")
     };

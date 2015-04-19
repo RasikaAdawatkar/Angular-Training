@@ -1,17 +1,24 @@
-<hello-world></hello-world>
+<div class='container' ng-controller='directCtrl'>
+	<div class="jumbotron">
+		<hello-world></hello-world>
+	</div>
 
+	<div class="jumbotron">
+	<h2 ng-click="reverseName()">Hey {{name}}, Click me to reverse your name</h2>
+	<my-directive></my-directive>
+	</div>
 
-<h2 ng-click="reverseName()">Hey {{name}}, Click me to reverse your name</h2>
-<my-directive></my-directive>
+	<div class='jumbotron'>
+		<div my-custom-directive
+			class="directive"
+			my-name="{{name}}"
+			reverse="reverseName()"
+			color="color" >
+		</div>
+	</div>
 
-
-
-<div my-custom-directive
-  class="directive"
-  my-name="{{name}}"
-  reverse="reverseName()"
-  color="color" >
+	<div class='jumbotron'>
+		<input type="text" ng-model="appColor" placeholder="Enter a color"/>
+		<hello-world-example></hello-world-example>
+	</div>
 </div>
-
- <input type="text" ng-model="appColor" placeholder="Enter a color"/>
-  <hello-world-example></hello-world-example>
